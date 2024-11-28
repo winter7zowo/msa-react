@@ -1,11 +1,20 @@
 import { useState } from 'react'
 import './Details.css'
+import { IoIosArrowBack } from "react-icons/io";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+      <div className="back-button">
+        <IoIosArrowBack />
+      </div>
+      <div className="menu-button">
+        <TfiMenuAlt />
+      </div>
       <div className="previewer">
         <img src="src\image\preview.jpg" alt="PA preview" />
       </div>

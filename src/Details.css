@@ -5,15 +5,33 @@
   text-align: center;
 }
 
+.back-button {
+  position: absolute;
+  top: 5vh;
+  left: 3vw;
+  font-size: 30px;
+  color: #ff6a3b;
+  text-decoration: none;
+}
+
+.menu-button {
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
 .previewer {
   position: relative;
   display: flex;
   height: 70vh;
-  left: -30vw;
+  left: -32vw;
 }
 
 .previewer img {
-  max-width: 80%;
+  max-width: 25vw;
   height: auto;
 }
 
@@ -22,6 +40,7 @@
   position: absolute;
   font-weight: 800;
   top: 10vh;
+  left: 35vw;
   font-size: 28px;
   font-family: HYQH, sans-serif;
 }
@@ -30,6 +49,7 @@
   display: flex;
   position: absolute;
   top: 20%;
+  left: 35vw;
 }
 
 .description p {
@@ -49,11 +69,11 @@
 }
 
 .author {
-  margin-right: 1vw;
+  margin-right: 1.5vw;
 }
 
 .teacher {
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 
 .author-description {
@@ -76,11 +96,13 @@
   font-family: sans-serif;
   flex-wrap: wrap;
   width: 25vw;
+  text-align: left;
 }
 
 .work-description {
   position: absolute;
   top: 45vh;
+  left: 35vw;
   font-size: 22px;
   font-family: HYQH, sans-serif;
 }
@@ -93,4 +115,5 @@
 .work-description #text {
   font-size: 18px;
   width: 60vw;
+  text-align: left;
 }
