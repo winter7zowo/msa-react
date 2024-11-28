@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.previewer {
+  position: relative;
+  display: flex;
+  height: 70vh;
+  left: -30vw;
+}
+
+.previewer img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+.title {
+  position: absolute;
+  font-weight: 800;
+  top: 10vh;
+  font-size: 28px;
+  font-family: HYQH, sans-serif;
+}
+
+.description {
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+.description p {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: HYQH, sans-serif;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.description img {
+  max-width: 8vw;
+  margin: 10px;
+  height: auto;
+  display: block;
+  margin-left: 0;
+}
+
+.author {
+  margin-right: 1vw;
+}
+
+.teacher {
+  margin-left: 1vw;
+}
+
+.author-description {
+  position: absolute;
+  top: 20%;
+  right: 15vw;
+}
+
+.author-description #content {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: HYQH, sans-serif;
+  display: flex;
+  text-align: left;
+}
+
+.author-description #text {
+  font-weight: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  width: 25vw;
+}
+
+.work-description {
+  position: absolute;
+  top: 45vh;
+  font-size: 22px;
+  font-family: HYQH, sans-serif;
+}
+
+.work-description #content {
+  font-weight: 800;
+  text-align: left;
+}
+
+.work-description #text {
+  font-size: 18px;
+  width: 60vw;
+}
