@@ -1,7 +1,5 @@
 import { useRef, useEffect } from 'react'
 import './Details.css'
-import { IoIosArrowBack } from "react-icons/io";
-import { TfiMenuAlt } from "react-icons/tfi";
 
 function App() {
   const textRef = useRef(null);
@@ -62,96 +60,59 @@ function App() {
     <>
 
       <div className="back-button">
-        <IoIosArrowBack />
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.5 27L7 18.5L6 17.5L7 16.5L15.5 8L17 9.5L10 16.5H30V18.5H10L17 25.5L15.5 27Z" fill="#FF6A3B" />
+        </svg>
       </div>
       <div className="menu-button">
-        <TfiMenuAlt />
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="8.5" width="18" height="2" fill="white" />
+          <circle cx="7.5" cy="9.5" r="1.5" fill="white" />
+          <rect x="12" y="16.5" width="18" height="2" fill="white" />
+          <rect x="12" y="24.5" width="18" height="2" fill="white" />
+          <circle cx="7.5" cy="17.5" r="1.5" fill="white" />
+          <circle cx="7.5" cy="25.5" r="1.5" fill="white" />
+        </svg>
       </div>
-      <div className="previewer">
-        <img src="src\image\preview.jpg" alt="PA preview" />
+      <div className="preview">
+        <img src="src\image\preview.png" alt="PA preview" />
       </div>
       <p className="title">
-        作品名称
+        游行:第三幅 The Parade: No.3
       </p>
-      <div className="description">
-        <div className="author">
-          <p id="content">
-            作者
-          </p>
-          <img src="src\image\ok.jpg" alt="author"></img>
-        </div>
-        <div className="teacher">
-          <p id="content">
-            导师
-          </p>
-          <img src="src\image\ok.jpg" alt="teacher"></img>
-        </div>
+      <div className="avatar">
+        <img src="src\image\ok.jpg" alt="author"></img>
+        <img src="src\image\ok.jpg" alt="teacher"></img>
       </div>
-      <div className="author-description">
-        <p id="content">
-          作者介绍
-        </p>
-        <p id="text">
-          我的世界下雨了怎么办？
-
-          我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-        </p>
-      </div>
+      <p className="author-title">
+        作者/Author<br />
+        Alexandra Sima<br />
+        司马明芳
+      </p>
+      <p className="teacher-title">
+        导师/Instrutor<br />
+        Ryan 杨博宇
+      </p>
+      <p className="grade-infomation">
+        2023届-9年级 <span id="en">Grade 9</span><br />
+        用户体验设计 <span id="en">User Experience Design</span>
+      </p>
+      <p className="author-description-title">
+        作者介绍
+      </p>
+      <p className="author-description">
+        我是司马明芳，一个又讨人厌又讨人喜欢的傲娇混合体。<br />
+        I am Alexandra, a mixture of obnoxious and endearing.
+      </p>
+      <p className="work-description-title">
+        作品介绍
+      </p>
       <div className="work-description">
-        <p id="content">
-          作品介绍
-        </p>
         <div id="text-container">
           <p id="text" ref={textRef}>
-            我的世界下雨了怎么办？
-
-            我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-
-            我的世界下雨了，其实就是我的世界下雨了，大家可能会很惊讶我的世界下雨了怎么会是我的世界下雨了呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于我的世界下雨了的事情了，大家有什么想法呢，欢迎在评论区留言告诉小编一起讨论哦！
-
-            1，我的世界下雨可以使用指令让雨停止，首先我们按T打开聊天框，输入指令/weather clear。
-
-            2，接着我们输出指令，就可以成功让雨停止了
-
-            我的世界下雨了怎么办？
-
-            我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-
-            我的世界下雨了，其实就是我的世界下雨了，大家可能会很惊讶我的世界下雨了怎么会是我的世界下雨了呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于我的世界下雨了的事情了，大家有什么想法呢，欢迎在评论区留言告诉小编一起讨论哦！
-
-            1，我的世界下雨可以使用指令让雨停止，首先我们按T打开聊天框，输入指令/weather clear。
-
-            2，接着我们输出指令，就可以成功让雨停止了
-
-            我的世界下雨了怎么办？
-
-            我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-
-            我的世界下雨了，其实就是我的世界下雨了，大家可能会很惊讶我的世界下雨了怎么会是我的世界下雨了呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于我的世界下雨了的事情了，大家有什么想法呢，欢迎在评论区留言告诉小编一起讨论哦！
-
-            1，我的世界下雨可以使用指令让雨停止，首先我们按T打开聊天框，输入指令/weather clear。
-
-            2，接着我们输出指令，就可以成功让雨停止了
-
-            我的世界下雨了怎么办？
-
-            我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-
-            我的世界下雨了，其实就是我的世界下雨了，大家可能会很惊讶我的世界下雨了怎么会是我的世界下雨了呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于我的世界下雨了的事情了，大家有什么想法呢，欢迎在评论区留言告诉小编一起讨论哦！
-
-            1，我的世界下雨可以使用指令让雨停止，首先我们按T打开聊天框，输入指令/weather clear。
-
-            2，接着我们输出指令，就可以成功让雨停止了
-
-            我的世界下雨了怎么办？
-
-            我的世界下雨了是怎么回事呢？相信大家都很熟悉，但是我的世界下雨了是怎么回事呢，下面就让小编带大家一起了解吧。
-
-            我的世界下雨了，其实就是我的世界下雨了，大家可能会很惊讶我的世界下雨了怎么会是我的世界下雨了呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于我的世界下雨了的事情了，大家有什么想法呢，欢迎在评论区留言告诉小编一起讨论哦！
-
-            1，我的世界下雨可以使用指令让雨停止，首先我们按T打开聊天框，输入指令/weather clear。
-
-            2，接着我们输出指令，就可以成功让雨停止了
+            这是“游行”系列绘画的第三幅作品。故事发生在一次盛大的“状元”游行中。“状元”头戴状元帽，身穿校服，系着绶带，骑在马上，身后的起重机在操纵着她。这幅作品展示了“状元”苏醒的瞬间。通过这一系列的绘画，我想表达的是在父母操纵和成绩至上意识形态的教育下，青少年的意识觉醒。<br />
+            <br />
+            <i id="en">This painting is the third installment in the "Parade" series, depicting a grand procession where a "champion" adorned with a champion cap, school uniform, and ribbons rides on a horse while being guided by a crane. The artwork captures the moment of awakening for this champion. Through this series of paintings, my intention is to convey the emergence of teenagers' consciousness amidst parental manipulation and an emphasis on achievement.</i>
           </p>
           <div id="custom-scrollbar">
             <div className="scroll-thumb" ref={thumbRef}></div>
